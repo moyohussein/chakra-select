@@ -1,14 +1,17 @@
-import { Button } from '@chakra-ui/react'
-import React from 'react'
+import { Text, BaseThemeTypings } from "@chakra-ui/react";
+
+import Option from "../components/Option";
+import Select from "../components/Select";
 
 const Homepage = () => {
   return (
     <div>
-        Homepage
-
+      <Text>Homepage</Text>
+      <Select placeholder="Select Option">
+        <Option label="shayo">Shayo</Option>
+      </Select>
     </div>
-    
-  )
-}
+  );
+};
 
-export default Homepage
+export default Homepage;

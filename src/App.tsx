@@ -1,13 +1,17 @@
-import { ReactNode, useState } from 'react'
-import './App.css'
-import { ChakraProvider } from '@chakra-ui/react'
-import Homepage from './pages'
+import { ChakraProvider } from "@chakra-ui/react";
+
+import Homepage from "./pages";
+
+import theme from "./theme";
+
+import "./App.css";
 
 function App() {
-
   return (
-    <Homepage />
-  )
+    <ChakraProvider theme={theme}>
+      <Homepage />
+    </ChakraProvider>
+  );
 }
 
-export default App
+export default App;
