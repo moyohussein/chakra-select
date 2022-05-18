@@ -1,13 +1,12 @@
 import { ReactNode, useState } from 'react'
 import './App.css'
 import { ChakraProvider } from '@chakra-ui/react'
+import Homepage from './pages'
 
-function App(children: ReactNode) {
+function App() {
 
   return (
-    <ChakraProvider>
-      {children}
-    </ChakraProvider>
+    <Homepage />
   )
 }
 
